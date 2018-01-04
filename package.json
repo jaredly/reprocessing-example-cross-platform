@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "rsb native:hot",
+    "native": "rsb native",
     "all": "rsb all",
     "android": "rsb android",
     "android:run": "rsb android:run",

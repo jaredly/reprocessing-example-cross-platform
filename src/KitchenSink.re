@@ -98,7 +98,9 @@ let matrix = (env, t) => {
     Draw.scale(~x=0.95, ~y=0.95, env)
   };
   Draw.popMatrix(env)
+
 };
+
 
 let draw = ({font, t} as state, env) => {
   Draw.background(Constants.black, env);
@@ -107,7 +109,7 @@ let draw = ({font, t} as state, env) => {
   Draw.text(
     ~font,
     ~body="Mouse: " ++ string_of_int(x) ++ "," ++ string_of_int(y),
-    ~pos=(10, 10),
+    ~pos=(20, 20),
     env
   );
   {...state, t: t +. Env.deltaTime(env)}

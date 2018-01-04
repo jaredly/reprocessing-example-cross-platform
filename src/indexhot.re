@@ -1,1 +1,1 @@
-Reprocessing.hotreload("./KitchenSink.re");
+Reprocessing.hotreload("./src/dev.re");
