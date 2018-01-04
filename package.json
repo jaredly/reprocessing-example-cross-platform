@@ -1,0 +1,24 @@
+{
+  "name": "gravitron",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "rsb native:hot",
+    "all": "rsb all",
+    "android": "rsb android",
+    "android:run": "rsb android:run",
+    "ios": "rsb ios",
+    "js": "rsb js",
+    "serve": "rsb js:serve"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "bsansouci/bsb-native#fast"
+  },
+  "dependencies": {
+    "@jaredly/reprocessing": "^1.0.2"
+  }
+}
