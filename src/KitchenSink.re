@@ -6,7 +6,10 @@ type state = {
 };
 
 let setup = (assetDir, env) => {
-  Env.size(~width=400, ~height=500, env);
+  if (Reprocessing.target != "native-android") {
+
+    Env.size(~width=400, ~height=500, env);
+  };
   {
     t: 0.,
     font:
