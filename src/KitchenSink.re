@@ -6,7 +6,7 @@ type state = {
 };
 
 let setup = (assetDir, env) => {
-  Env.size(~width=400, ~height=800, env);
+  Env.size(~width=400, ~height=500, env);
   {
     t: 0.,
     font:
@@ -20,15 +20,12 @@ let setup = (assetDir, env) => {
 
 let stroke = (env, t) =>
   ();
-    /* TODO strokes, beziers, etc. */
 
 let matrix = (env, t) => {
   Draw.pushMatrix(env);
   let by = mod_float(t, 20.) *. 10.;
   let by = sin(t *. 2.) *. 5.;
-  Draw.translate(~x=200. -. by *. 2., ~y=200., env);
-  Draw.shear(~x=by /. 40., ~y=by /. 60., env);
-  Draw.scale(~x=by /. 20. +. 1., ~y=by /. 60. +. 1., env);
+  Draw.translate(~x=200., ~y=200., env);
   Draw.stroke(Utils.color(~r=200, ~g=200, ~b=100, ~a=200), env);
   Draw.noFill(env);
   Draw.strokeWeight(10, env);
