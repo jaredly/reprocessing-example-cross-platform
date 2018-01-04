@@ -113,4 +113,4 @@ let draw = ({font, t} as state, env) => {
   {...state, t: t +. Env.deltaTime(env)}
 };
 
-let run = (assetDir) => run(~setup=setup("./assets"), ~draw, ());
+let run = (assetDir) => run(~setup=setup(assetDir), ~draw, ());
