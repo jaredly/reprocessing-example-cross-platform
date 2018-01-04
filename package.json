@@ -1,6 +1,6 @@
 {
-  "name": "gravitron",
-  "version": "0.1.0",
+  "name": "reprocessing-example-cross-platform",
+  "version": "1.0.0",
   "scripts": {
     "start": "rsb native:hot",
     "native": "rsb native",
