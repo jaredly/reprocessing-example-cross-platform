@@ -6,7 +6,7 @@ type state = {
 };
 
 let setup = (assetDir, env) => {
-  if (Reprocessing.target != "native-android") {
+  if (Reprocessing.target != "native-android" && Reprocessing.target != "native-ios") {
 
     Env.size(~width=400, ~height=500, env);
   };
