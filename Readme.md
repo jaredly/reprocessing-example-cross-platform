@@ -19,3 +19,6 @@ I recommend using native built + hot reloading for most of your development, and
 
 `npm run android` to build, or `npm run android:run` to build & install to the currently running emulator / attached device.
 
+# License
+
+This code is all licensed Creative Commons CC0
