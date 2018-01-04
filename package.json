@@ -1,6 +1,6 @@
 {
   "name": "reprocessing-example-cross-platform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "rsb native:hot",
     "native": "rsb native",
@@ -9,7 +9,8 @@
     "android:run": "rsb android:run",
     "ios": "rsb ios",
     "js": "rsb js",
-    "serve": "rsb js:serve"
+    "serve": "rsb js:serve",
+    "clean": "rm -rf _build"
   },
   "keywords": [
     "BuckleScript"
