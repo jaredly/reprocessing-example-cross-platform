@@ -1,0 +1,1 @@
+KitchenSink.run("./assets");

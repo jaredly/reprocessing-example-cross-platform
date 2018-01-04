@@ -20,6 +20,6 @@
     "bs-platform": "bsansouci/bsb-native#fast"
   },
   "dependencies": {
-    "@jaredly/reprocessing": "^1.0.2"
+    "@jaredly/reprocessing": "^1.0.4"
   }
 }
