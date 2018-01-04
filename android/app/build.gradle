@@ -5,7 +5,7 @@ apply plugin: 'com.android.application'
 // keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 task copyTask(type: Copy) {
-    def toDir = rootProject.file('app/assets')
+    def toDir = rootProject.file('app/src/main/assets')
     from rootProject.file('../assets')
     into toDir
 }
