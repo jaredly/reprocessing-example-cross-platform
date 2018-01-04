@@ -1,6 +1,6 @@
 # Setup
 
-If you're targetting mobile, go to https://github.com/jaredly/ocaml-cross-mobile/ to set up your cross-compilers. (currently macOS is the only platform with prebuilt compilers)
+First go to https://github.com/jaredly/ocaml-cross-mobile/ to set up your cross-compilers. (currently macOS is the only platform with prebuilt compilers)
 
 Check out `package.json` to see what commands are available.
 
