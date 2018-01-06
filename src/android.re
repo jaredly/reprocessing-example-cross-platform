@@ -1,1 +1,1 @@
-KitchenSink.run("");
+Game.run("");

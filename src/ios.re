@@ -1,1 +1,1 @@
-KitchenSink.run("./assets");
+Game.run("./assets");
