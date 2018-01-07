@@ -28,9 +28,11 @@ let randomStarPos = env => {
   )
 };
 
-let setup = (assetDir, env) => {
-  if (Reprocessing.target != "native-android" && Reprocessing.target != "native-ios") {
-    Env.size(~width=340, ~height=620, env);
+let setup = (size, assetDir, env) => {
+  switch size {
+  | `InitialSize => ()
+  | `FullScreen => Env.size(~width=Env.maxWidth(env), ~height=Env.maxHeight(env), env)
+  | `Normal => Env.size(~width=500, ~height=500, env)
   };
   {
     t: 0.,
@@ -43,7 +45,7 @@ let setup = (assetDir, env) => {
     star: Draw.loadImage(~filename=Filename.concat(assetDir, "star.png"), env),
     player: Draw.loadImage(~filename=Filename.concat(assetDir, "player2.png"), env),
     statusFont: Draw.loadFont(~filename=Filename.concat(assetDir, "SFCompactDisplay-Regular-16.fnt"), env),
-    titleFont: Draw.loadFont(~filename=Filename.concat(assetDir, "Arial Black-32.fnt"), env),
+    titleFont: Draw.loadFont(~filename=Filename.concat(assetDir, "Arial-Black-32.fnt"), env),
   }
 };
 
@@ -104,10 +106,11 @@ let step = ({pos: (x, y) as pos, left, velocity: (vx, vy)} as state, env) => {
     }
   };
 
+  let xspeed = min(3., float_of_int(Env.width(env)) /. 320.) *. 4.;
   let ((vx, vy), left) = switch (action(env)) {
   | `Nothing => ((vx, vy), left)
-  | `Left => ((-4., vy), true)
-  | `Right => ((4., vy), false)
+  | `Left => ((-. xspeed, vy), true)
+  | `Right => ((xspeed, vy), false)
   };
   let x = x +. vx *. delta;
   let y = y +. vy *. delta;
@@ -201,4 +204,4 @@ let draw = ({left, pos, points, t} as state, env) => {
   {...state, t: t +. Env.deltaTime(env)}
 };
 
-let run = (assetDir) => Reprocessing.run(~setup=setup(assetDir), ~draw, ~title="CamlQuest", ());
+let run = (size, assetDir) => Reprocessing.run(~setup=setup(size, assetDir), ~draw, ~title="CamlQuest", ());

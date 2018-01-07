@@ -10,7 +10,7 @@
     "ios": "rsb ios",
     "js": "rsb js",
     "serve": "rsb js:serve",
-    "clean": "rm -rf _build"
+    "clean": "rm -rf _build && bsb -clean-world"
   },
   "keywords": [
     "BuckleScript"
@@ -22,6 +22,6 @@
     "reprocessing-scripts": "1.0.6"
   },
   "dependencies": {
-    "@jaredly/reprocessing": "^1.0.5"
+    "@jaredly/reprocessing": "^1.0.6"
   }
 }

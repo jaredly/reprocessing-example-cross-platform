@@ -1,1 +1,1 @@
-Game.run("./assets");
+Game.run(`InitialSize, "./assets");

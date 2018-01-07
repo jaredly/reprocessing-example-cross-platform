@@ -1,1 +1,1 @@
-Game.run("");
+Game.run(`InitialSize, "");
