@@ -19,7 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "bsansouci/bsb-native#fast",
-    "reprocessing-scripts": "1.0.7"
+    "reprocessing-scripts": "1.0.8"
   },
   "dependencies": {
     "@jaredly/reprocessing": "^1.0.6"
