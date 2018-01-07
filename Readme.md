@@ -1,12 +1,14 @@
 # Setup
 
-First go to https://github.com/jaredly/ocaml-cross-mobile/ to set up your cross-compilers. (currently macOS & linux are the only platform with prebuilt compilers)
+First go to https://github.com/jaredly/ocaml-cross-mobile/ to set up your cross-compilers.
 
 Check out `package.json` to see what commands are available, or run `npm run` to see the list.
 
+NOTE: macos is the only development platform currently supported.
+
 # Development
 
-I recommend using native built + hot reloading for most of your development, and only build to web or mobile to check things out.
+I recommend using native build + hot reloading for most of your development, and only build to web or mobile to check things out.
 
 `npm start` will get your bsb build going, and start the app. It will try to keep the app alive, by checking every second if it's died, and restarting it if it has.
 
