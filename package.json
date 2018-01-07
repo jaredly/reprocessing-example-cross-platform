@@ -4,6 +4,7 @@
   "scripts": {
     "start": "rsb native:hot",
     "native": "rsb native",
+    "bundle": "rsb native:bundle",
     "all": "rsb all",
     "android": "rsb android",
     "android:run": "rsb android:run",

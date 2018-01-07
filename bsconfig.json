@@ -17,8 +17,13 @@
     "backend": "bytecode",
     "main-module": "Dev",
   },{
+    "backend": "native",
+    "main-module": "Prod",
+  },{
     "backend": "js",
     "main-module": "Web"
   }],
+  "icon": "./icons/icon.png",
+  "appName": "CamlQuest",
   "refmt": 3,
 }
