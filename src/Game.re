@@ -19,7 +19,7 @@ let playerHeight = 133 / 2;
 let starSize = 100 / 2;
 
 let groundColor = Utils.color(~r=183, ~g=114, ~b=59, ~a=255);
-let groundHeight = 50;
+let groundHeight = 100;
 
 let randomStarPos = env => {
   (
@@ -149,7 +149,7 @@ let draw = ({left, pos, points, t} as state, env) => {
 
   /* Floor */
   Draw.fill(groundColor, env);
-  Draw.rect(~pos=(0, floorY), ~width=Env.width(env), ~height=50, env);
+  Draw.rect(~pos=(0, floorY), ~width=Env.width(env), ~height=groundHeight, env);
 
   let (x, y) = pos;
   let x = int_of_float(x);
@@ -201,4 +201,4 @@ let draw = ({left, pos, points, t} as state, env) => {
   {...state, t: t +. Env.deltaTime(env)}
 };
 
-let run = (assetDir) => run(~setup=setup(assetDir), ~draw, ());
+let run = (assetDir) => Reprocessing.run(~setup=setup(assetDir), ~draw, ~title="CamlQuest", ());
