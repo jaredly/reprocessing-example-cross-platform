@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F5A5AF01FFDFEB900E7603B /* Reprocessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reprocessing.m; path = "../../node_modules/@jaredly/reasongl-ios/ios/Reprocessing.m"; sourceTree = "<group>"; };
-		7F5A5AF21FFDFEBE00E7603B /* Reprocessing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Reprocessing.h; path = "../../node_modules/@jaredly/reasongl-ios/ios/Reprocessing.h"; sourceTree = "<group>"; };
+		7F5A5AF01FFDFEB900E7603B /* Reprocessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reprocessing.m; path = "../reprocessing/Reprocessing.m"; sourceTree = "<group>"; };
+		7F5A5AF21FFDFEBE00E7603B /* Reprocessing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Reprocessing.h; path = "../reprocessing/Reprocessing.h"; sourceTree = "<group>"; };
 		7F5A5AF31FFE010600E7603B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F6B2A471FDF7C9B00DC8E5E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../assets; sourceTree = "<group>"; };
 		7F6B2A4B1FDF7F4400DC8E5E /* libreasongl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libreasongl.a; sourceTree = "<group>"; };

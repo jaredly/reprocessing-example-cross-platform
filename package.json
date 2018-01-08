@@ -9,6 +9,8 @@
     "android": "rsb android",
     "android:run": "rsb android:run",
     "ios": "rsb ios",
+    "ios:sim": "rsb ios:sim",
+    "ios:device": "rsb ios:device",
     "js": "rsb js",
     "serve": "rsb js:serve",
     "clean": "rm -rf _build && bsb -clean-world"
