@@ -8,6 +8,7 @@
     "all": "rsb all",
     "android": "rsb android",
     "android:run": "rsb android:run",
+    "android:hot": "rsb android:hot",
     "ios": "rsb ios",
     "ios:sim": "rsb ios:sim",
     "ios:device": "rsb ios:device",
