@@ -25,5 +25,6 @@
   }],
   "icon": "./icons/icon.png",
   "appName": "CamlQuest",
+  "androidPackage": "com.jaredforsyth.reprocessing_example",
   "refmt": 3,
 }
