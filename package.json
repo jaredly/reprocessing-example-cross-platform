@@ -1,6 +1,6 @@
 {
   "name": "reprocessing-example-cross-platform",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "start": "rsb native:hot",
     "native": "rsb native",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "bsansouci/bsb-native#fast",
-    "reprocessing-scripts": "1.3.4"
+    "reprocessing-scripts": "1.3.5"
   },
   "dependencies": {
     "@jaredly/reprocessing": "1.1.4"
